@@ -97,12 +97,10 @@ python toolbox.py
 
 This project aims to provide practical and easy-to-use tools for Linux and Termux users in a single toolkit.
 
+## Version
+
+Current Release: v1.1
+
 ## Author
 
 Noel E. Rosas Jr.
-
-GitHub: tartpangit811-hub
-
-## License
-
-MIT License
