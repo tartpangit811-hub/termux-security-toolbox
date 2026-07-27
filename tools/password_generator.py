@@ -1,18 +1,34 @@
 import random
 import string
 
-def generate_password(length=12):
+def generate_password(length):
     characters = string.ascii_letters + string.digits + string.punctuation
-    password = ''.join(random.choice(characters) for _ in range(length))
-    return password
+    return ''.join(random.choice(characters) for _ in range(length))
 
 print("=" * 30)
 print(" PASSWORD GENERATOR ")
 print("=" * 30)
 
-length = int(input("Enter password length: "))
+print("\n1. Weak Password")
+print("2. Medium Password")
+print("3. Strong Password")
 
-password = generate_password(length)
+choice = input("\nSelect option: ")
 
-print("\nGenerated Password:")
-print(password)
+if choice == "1":
+    password = generate_password(8)
+    print("\nWeak Password:")
+    print(password)
+
+elif choice == "2":
+    password = generate_password(12)
+    print("\nMedium Password:")
+    print(password)
+
+elif choice == "3":
+    password = generate_password(16)
+    print("\nStrong Password:")
+    print(password)
+
+else:
+    print("\nInvalid option.")
